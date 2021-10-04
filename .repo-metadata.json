@@ -10,6 +10,6 @@
     "repo": "googleapis/python-gke-connect-gateway",
     "distribution_name": "google-cloud-gke-connect-gateway",
     "api_id": "connectgateway.googleapis.com",
-    "default_version": "",
+    "default_version": "v1beta1",
     "codeowner_team": ""
 }
