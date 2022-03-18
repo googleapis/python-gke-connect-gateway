@@ -13,16 +13,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-from google.cloud.gkeconnect.gateway_v1.services.gateway_service.client import (
-    GatewayServiceClient,
-)
-from google.cloud.gkeconnect.gateway_v1.services.gateway_service.async_client import (
-    GatewayServiceAsyncClient,
-)
-
-
-__all__ = (
-    "GatewayServiceClient",
-    "GatewayServiceAsyncClient",
-)

@@ -14,15 +14,8 @@
 # limitations under the License.
 #
 
-from google.cloud.gkeconnect.gateway_v1.services.gateway_service.client import (
-    GatewayServiceClient,
-)
-from google.cloud.gkeconnect.gateway_v1.services.gateway_service.async_client import (
-    GatewayServiceAsyncClient,
-)
+
+__protobuf__ = proto.module(package="google.cloud.gkeconnect.gateway.v1", manifest={},)
 
 
-__all__ = (
-    "GatewayServiceClient",
-    "GatewayServiceAsyncClient",
-)
+__all__ = tuple(sorted(__protobuf__.manifest))
