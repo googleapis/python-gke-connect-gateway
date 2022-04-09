@@ -16,7 +16,7 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Optional, Sequence, Tuple, Type, Union
+from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib
@@ -424,7 +424,7 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
         .. code-block:: python
 
-            from google.cloud.gkeconnect import gateway_v1beta1
+                    from google.cloud.gkeconnect import gateway_v1beta1
 
             def sample_get_resource():
                 # Create a client
@@ -581,7 +581,7 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
         .. code-block:: python
 
-            from google.cloud.gkeconnect import gateway_v1beta1
+                    from google.cloud.gkeconnect import gateway_v1beta1
 
             def sample_post_resource():
                 # Create a client
@@ -738,7 +738,7 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
         .. code-block:: python
 
-            from google.cloud.gkeconnect import gateway_v1beta1
+                    from google.cloud.gkeconnect import gateway_v1beta1
 
             def sample_delete_resource():
                 # Create a client
@@ -895,7 +895,7 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
         .. code-block:: python
 
-            from google.cloud.gkeconnect import gateway_v1beta1
+                    from google.cloud.gkeconnect import gateway_v1beta1
 
             def sample_put_resource():
                 # Create a client
@@ -1052,7 +1052,7 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
         .. code-block:: python
 
-            from google.cloud.gkeconnect import gateway_v1beta1
+                    from google.cloud.gkeconnect import gateway_v1beta1
 
             def sample_patch_resource():
                 # Create a client
