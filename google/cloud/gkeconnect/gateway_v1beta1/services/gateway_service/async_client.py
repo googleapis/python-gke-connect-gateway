@@ -16,7 +16,7 @@
 from collections import OrderedDict
 import functools
 import re
-from typing import Dict, Optional, Sequence, Tuple, Type, Union
+from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core.client_options import ClientOptions
@@ -217,7 +217,6 @@ class GatewayServiceAsyncClient:
         r"""GetResource performs an HTTP GET request on the
         Kubernetes API Server.
 
-
         .. code-block:: python
 
             from google.cloud.gkeconnect import gateway_v1beta1
@@ -374,7 +373,6 @@ class GatewayServiceAsyncClient:
     ) -> httpbody_pb2.HttpBody:
         r"""PostResource performs an HTTP POST on the Kubernetes
         API Server.
-
 
         .. code-block:: python
 
@@ -533,7 +531,6 @@ class GatewayServiceAsyncClient:
         r"""DeleteResource performs an HTTP DELETE on the
         Kubernetes API Server.
 
-
         .. code-block:: python
 
             from google.cloud.gkeconnect import gateway_v1beta1
@@ -691,7 +688,6 @@ class GatewayServiceAsyncClient:
         r"""PutResource performs an HTTP PUT on the Kubernetes
         API Server.
 
-
         .. code-block:: python
 
             from google.cloud.gkeconnect import gateway_v1beta1
@@ -848,7 +844,6 @@ class GatewayServiceAsyncClient:
     ) -> httpbody_pb2.HttpBody:
         r"""PatchResource performs an HTTP PATCH on the
         Kubernetes API Server.
-
 
         .. code-block:: python
 
