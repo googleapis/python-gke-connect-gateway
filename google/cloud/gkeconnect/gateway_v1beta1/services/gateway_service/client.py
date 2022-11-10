@@ -16,7 +16,18 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union, cast
+from typing import (
+    Dict,
+    Mapping,
+    MutableMapping,
+    MutableSequence,
+    Optional,
+    Sequence,
+    Tuple,
+    Type,
+    Union,
+    cast,
+)
 
 from google.api_core import client_options as client_options_lib
 from google.api_core import exceptions as core_exceptions
@@ -58,7 +69,7 @@ class GatewayServiceClientMeta(type):
 
     def get_transport_class(
         cls,
-        label: str = None,
+        label: Optional[str] = None,
     ) -> Type[GatewayServiceTransport]:
         """Returns an appropriate transport class.
 
@@ -317,7 +328,7 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
         self,
         *,
         credentials: Optional[ga_credentials.Credentials] = None,
-        transport: Union[str, GatewayServiceTransport, None] = None,
+        transport: Optional[Union[str, GatewayServiceTransport]] = None,
         client_options: Optional[Union[client_options_lib.ClientOptions, dict]] = None,
         client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
     ) -> None:
@@ -415,10 +426,10 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
     def get_resource(
         self,
-        request: Union[httpbody_pb2.HttpBody, dict] = None,
+        request: Optional[Union[httpbody_pb2.HttpBody, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> httpbody_pb2.HttpBody:
         r"""GetResource performs an HTTP GET request on the
@@ -579,10 +590,10 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
     def post_resource(
         self,
-        request: Union[httpbody_pb2.HttpBody, dict] = None,
+        request: Optional[Union[httpbody_pb2.HttpBody, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> httpbody_pb2.HttpBody:
         r"""PostResource performs an HTTP POST on the Kubernetes
@@ -743,10 +754,10 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
     def delete_resource(
         self,
-        request: Union[httpbody_pb2.HttpBody, dict] = None,
+        request: Optional[Union[httpbody_pb2.HttpBody, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> httpbody_pb2.HttpBody:
         r"""DeleteResource performs an HTTP DELETE on the
@@ -907,10 +918,10 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
     def put_resource(
         self,
-        request: Union[httpbody_pb2.HttpBody, dict] = None,
+        request: Optional[Union[httpbody_pb2.HttpBody, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> httpbody_pb2.HttpBody:
         r"""PutResource performs an HTTP PUT on the Kubernetes
@@ -1071,10 +1082,10 @@ class GatewayServiceClient(metaclass=GatewayServiceClientMeta):
 
     def patch_resource(
         self,
-        request: Union[httpbody_pb2.HttpBody, dict] = None,
+        request: Optional[Union[httpbody_pb2.HttpBody, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> httpbody_pb2.HttpBody:
         r"""PatchResource performs an HTTP PATCH on the
